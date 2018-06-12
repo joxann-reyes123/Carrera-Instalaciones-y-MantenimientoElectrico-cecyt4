@@ -1,0 +1,113 @@
+/*
+STYLES GUIDE:
+0. RESET
+1.LAYOUT
+2.GENERIC ITEMS
+3.PARTSOF THE WEB
+4.LIST
+5.FORM
+6. ANIMATIONS
+-------------------------
+COLORS:
+color1=>#2c3e56;
+color2=>#34495e;
+color3=>#3498db;
+color4=>#fff;
+*/
+
+/*0.RESET*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*1.LAYOUT*/
+body {text-align: center; font: 300 20px/1.7 "Roboto Condensed";}
+.header { display: flex; justify-content: center; align-items: center; background: cyan;}
+.navbar {display: flex; justify-content: center; align-items: center;}
+.egreso { text-align: left;}
+.list-object {display: flex; justify-content: center; align-items: center; align-items: center;}
+.list-object figure { display: flex; justify-content: center; align-items: center; flex-flow: column;}
+
+
+
+/*2.GENERIC ITEMS*/
+.header {height: 450px; background: url(../img/codigo.jpg) no-repeat center top;background-size: cover;}
+.navbar { height: 63px; background: #2c3e56;}
+.navbar a { color: #fff; padding: 0 20px; text-decoration: none; text-transform: uppercase; font: 20px "Stint Ultra Condensed"}
+.title { margin-bottom: 40px; font: 60px "Stint Ultra Condensed"; text-transform: uppercase;}
+p { margin-bottom: 40px;}
+
+/*3.PARTS OF THE WEB*/
+.content { padding: 80px 0;}
+.object { background: #34495e; color: #fff;}
+.object p { max-width: 1055px; margin: 0 auto;}
+.profile {background: #2c3e56; color: #fff;}
+.profile p {color:#FEC915; }
+.egreso { background: url(../img/electricidad.jpg) no-repeat center top; background-size: cover; color: #fff;}
+.egreso p {color: #FEC915;}
+.contain { max-width: 1055px; margin: 0 auto;}
+.egreso p {max-width: 450px;}
+.requirements { background: #34495e; color: #fff;}
+.requirements p { max-width: 1055px; margin: 0 auto;}
+.map { background: #2c3e56; color: #fff;}
+.location { color: #34495e; padding-bottom: 0;}
+.location .location img { max-width: 100%; width: 100%;}
+.cuest {background: #2c3e56; color: #fff;}
+
+/*LIST*/
+.list-object figure { position: relative; width: 150px; height: 190px;}
+.list-object figure::after { content: ""; position: absolute; top: 0; left: 0; border-radius: 50%; z-index: 0; background: #fff; width: 150px; height: 150px;}
+.list-object img { position: relative; z-index: 1;}
+.list-object li { padding: 0 30px;}
+.list-object figcaption { position: relative; left: 0; top: 0; bottom: -40px;}
+
+
+/*footer*/
+footer { background: #B8B7B2; color: #fff; overflow: auto;}
+.icon-text-icon { color: #fff;}
